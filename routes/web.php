@@ -14,8 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/user',function(){
-	$users = App\User::all();
-	return response()->json($users);
-
-});
